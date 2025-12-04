@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Administration Pénitentiaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Administration Pénitentiaire</h1>
+
+    <button id="toggleBtn" class="btn">Démarrer le service</button>
+
+    <h2>Temps actuel : <span id="timer">00:00:00</span></h2>
+
+    <h2>Historique</h2>
+    <table id="historyTable">
+        <tr>
+            <th>Date</th>
+            <th>Durée</th>
+        </tr>
+    </table>
+
+    <h2>Total cumulé : <span id="totalTime">00:00:00</span></h2>
+
+    <button id="resetBtn" class="reset">RESET</button>
+
+    <script src="service.js"></script>
+    <script>
+        initServicePage("staff");
+    </script>
+
+</body>
+</html>
 
